@@ -1,38 +1,36 @@
-.App {
+body {
+  background: linear-gradient(to right, #403a3e, #be5869);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix {
+  overflow: auto;
+}
+.form-container {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px 50px;
+  border-radius: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control {
+  margin: 10px;
+  width: 90%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.register-div,
+.login-div {
+  margin: 20px;
+}
+@media (max-width: 650px) {
+  .form-container {
+    width: 90%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 651px) and (max-width: 1000px) {
+  .form-container {
+    width: 60%;
   }
 }
